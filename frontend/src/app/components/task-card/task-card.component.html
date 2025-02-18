@@ -1,0 +1,10 @@
+<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <h5 class="mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{{ task.task }}</h5>
+    </a>
+    <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+    <div class="flex items-center">
+        <input type="checkbox" [checked]="task.completed" (change)="toggleComplete()" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Completed</label>
+    </div>
+</div>

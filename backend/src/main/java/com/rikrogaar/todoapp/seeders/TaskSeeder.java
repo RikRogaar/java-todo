@@ -20,11 +20,11 @@ public class TaskSeeder implements CommandLineRunner {
 
     private void loadTasks() {
         if (taskRepository.count() == 0) {
-            Task task1 = new Task("Learn Java Collections Framework", false);
-            Task task2 = new Task("Practice Spring Boot fundamentals", false);
-            Task task3 = new Task("Complete Java exercises", true);
-            Task task4 = new Task("Implement JUnit test cases", false);
-            Task task5 = new Task("Study Java Design Patterns", false);
+            Task task1 = new Task("Learn Java Collections Framework", "Learn Java Collections Framework", false);
+            Task task2 = new Task("Practice Spring Boot fundamentals", "Practice Spring Boot fundamentals", false);
+            Task task3 = new Task("Complete Java exercises", "Complete Java exercises", true);
+            Task task4 = new Task("Implement JUnit test cases", "Implement JUnit test cases", false);
+            Task task5 = new Task("Study Java Design Patterns", "Study Java Design Patterns", false);
 
             taskRepository.save(task1);
             taskRepository.save(task2);

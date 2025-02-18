@@ -1,12 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { TaskRepository } from '../../services/task.repository';
+import { TaskRepository } from 'src/app/repositories/task.repository';
 import { CommonModule } from '@angular/common';
+import { TaskCardComponent } from '@components/task-card/task-card.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [
     CommonModule,
+    TaskCardComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'

@@ -12,7 +12,7 @@ export class TaskService {
   private readonly apiUrl = environment.apiUrl;
 
   public getAllTasks(): Observable<Task[]> {
-    return this.http.get<Task[]>(`${this.apiUrl}/tasks/`);
+    return this.http.get<Task[]>(`${this.apiUrl}/tasks`);
   }
 
   public createTask(task: Task): Observable<Task> {

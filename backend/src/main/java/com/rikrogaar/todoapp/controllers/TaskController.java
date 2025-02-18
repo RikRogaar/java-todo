@@ -23,7 +23,7 @@ public class TaskController {
     @Autowired
     private TaskService taskService;
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<List<Task>> getAllTasks() {
         return ResponseEntity.ok(taskService.getAllTask());
     }
